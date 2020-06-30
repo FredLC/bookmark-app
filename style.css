@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    --border-radius: 5px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background-image: url('cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    width: 275px;
+    margin: 20px auto 10px;
+    user-select: none;
+    font-weight: 400;
+}
+
+h1:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: 10px;
+}
+
+.item:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+a {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+.fa-times {
+    float: right;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.name {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.name img {
+    height: 20px;
+    width: 20px;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
